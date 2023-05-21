@@ -62,3 +62,30 @@ class GenericSimulation(object):
 
     def getTimeGrid(self):
         return self._time_grid
+
+    def getPaths(self):
+        return self._paths
+
+    def getFrequency(self):
+        return self._frequency
+
+    def getDiscountCurve(self):
+        return self._discount_curve
+
+    def extendSpecialDates(self, array):
+        self._special_dates.extend(array)
+
+    def update(self, initial_value=None, volatility=None, final_date=None):
+        pass
+
+    def generatePaths(self, fixed_seed=False, day_count=365.):
+        pass
+
+    def resetInstrumentValues(self):
+        self._instrument_values = None
+
+    def getInitialValue(self):
+        return self._initial_value
+
+    def getVolatility(self):
+        return self._volatility

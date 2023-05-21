@@ -20,4 +20,6 @@ class NamesEnum(StrEnum):
     DELTA = 'delta', # jump diffusion
     KAPPA='kappa', # square root diffusion
     THETA='theta', # square root diffusion
+    STRIKE='strike',
+    MATURITY='maturity',
     RN_SET = 'rn_set'
